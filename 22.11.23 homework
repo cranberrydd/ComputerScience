@@ -1,0 +1,51 @@
+print('please answer "yes" or "no')
+er = 'invalid answer (ты инвалид, тебя же просили)'
+a = str(input('is it weekend/holidays right now? '))
+if a.lower() == 'yes':
+    b = str(input('have you done your homework for monday? '))
+    if b.lower() == 'yes':
+        c = str(input('all???? ARE U SURE? '))
+        if c.lower() == 'yes':
+            print('good job')
+        elif c.lower() == 'no':
+            print('you should to do it (you must)')
+        else:
+            print(er)
+    elif b.lower() == 'no':
+        print('you should to do it (you must)')
+    else:
+        print(er)
+elif a.lower() == 'no':
+    a1 = str(input('unlucky...do you have any test/exam today? '))
+    if a1.lower() == 'yes':
+        b1 = str(input('are you ready? '))
+        if b1.lower() == 'yes':
+            c1 = str(input('it could be harder than you think, are you sure you are ready? '))
+            if c1.lower() == 'yes':
+                print('ok, i hope you will do it the best way')
+            elif c1.lower() == 'no':
+                print('WTF? WHY ARE YOU STILL HERE?')
+            else:
+                print(er)
+        elif b1.lower() == 'no':
+            print('WTF? WHY ARE YOU STILL HERE?')
+        else:
+            print(er)
+    elif a1.lower() == 'no':
+        a2 = str(input('so, have you done your homework for today? '))
+        if a2.lower() == 'yes':
+            b2 = str(input('all???? ARE U SURE? '))
+            if b2.lower() == 'yes':
+                print('NICE !')
+            elif b2.lower() == 'no':
+                print('you should to do it (you must)')
+            else:
+                print(er)
+        elif a2.lower() == 'yes':
+            print('you should to do it (you must)')
+        else:
+            print(er)
+    else:
+        print(er)
+else:
+    print(er)
